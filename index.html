@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio 2025</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div><strong>IQB</strong></div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1>PORFOLIO</h1>
+      <p>Graphic & Web Design</p>
+    </section>
+
+    <section id="about" class="about">
+      <img src="https://via.placeholder.com/300" alt="Portrait" />
+      <div>
+        <h2>About Me</h2>
+        <p>
+          Hello! I’m Iliana, i’m a self-taught graphic designer and web
+          developer with a passion for visual storytelling and creative
+          problem-solving. I specialize in transforming ideas into impactful
+          designs using tools like Photoshop, and bringing them to life through
+          HTML, CSS, and JavaScript. My work blends creativity with technology
+          to craft unique, functional, and engaging digital experiences.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <!-- Proyecto 1 -->
+        <div class="project" data-project="1">
+          <img
+            src="https://via.placeholder.com/400x300"
+            alt="Graphic Desing"
+            class="project-thumbnail"
+          />
+          <!-- Lightbox para Proyecto 1 -->
+          <div class="lightbox-overlay" id="lightbox-1">
+            <div class="lightbox-content">
+              <span class="lightbox-close" data-close="1">&times;</span>
+              <div class="lightbox-gallery">
+                <img src="images/project1-img1.jpg" alt="Imagen 1" />
+                <img src="images/project1-img2.jpg" alt="Imagen 2" />
+                <img src="images/project1-img3.jpg" alt="Imagen 3" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="project" data-project="2">
+          <img
+            src="https://via.placeholder.com/400x300"
+            alt="Web Desing"
+            class="project-thumbnail"
+          />
+          <div class="lightbox-overlay" id="lightbox-2">
+            <div class="lightbox-content">
+              <span class="lightbox-close" data-close="2">&times;</span>
+              <div class="lightbox-gallery">
+                <img src="images/project2-img1.jpg" alt="Imagen 1" />
+                <img src="images/project2-img2.jpg" alt="Imagen 2" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="project" data-project="3">
+          <img
+            src="https://via.placeholder.com/400x300"
+            alt="Project 3"
+            class="project-thumbnail"
+          />
+          <div class="lightbox-overlay" id="lightbox-3">
+            <div class="lightbox-content">
+              <span class="lightbox-close" data-close="3">&times;</span>
+              <div class="lightbox-gallery">
+                <img src="images/project3-img1.jpg" alt="Imagen 1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Expertise</h2>
+      <div class="skills">
+        <span>HTLM</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Typography</span>
+        <span>Photoshop</span>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>&copy; 2025 Iliana Quintero Benitez. All rights reserved.</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
