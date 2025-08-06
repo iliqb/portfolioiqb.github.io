@@ -49,7 +49,7 @@
         <!-- Proyecto 1 -->
         <div class="project" data-project="1">
           <img
-            src="https://via.placeholder.com/400x300"
+            src="assests/Img1.png"
             alt="Graphic Desing"
             class="project-thumbnail"
           />
@@ -58,9 +58,17 @@
             <div class="lightbox-content">
               <span class="lightbox-close" data-close="1">&times;</span>
               <div class="lightbox-gallery">
-                <img src="images/project1-img1.jpg" alt="Imagen 1" />
-                <img src="images/project1-img2.jpg" alt="Imagen 2" />
-                <img src="images/project1-img3.jpg" alt="Imagen 3" />
+                <img src="assests/imagen1.png" alt="Imagen 1" />
+                <img src="assests/imagen2.png" alt="Imagen 2" />
+                <img src="assests/imagen3.png" alt="Imagen 3" />
+                <img src="assests/imagen4.png" alt="Imagen 4" />
+                <img src="assests/imagen5.png" alt="Imagen 5" />
+                <img src="assests/imagen6.png" alt="Imagen 6" />
+                <img src="assests/imagen7.png" alt="Imagen 7" />
+                <img src="assests/imagen8.png" alt="Imagen 8" />
+                <img src="assests/imagen9.png" alt="Imagen 9" />
+                <img src="assests/imagen10.png" alt="Imagen 10" />
+                <img src="assests/imaegn11.png" alt="Imagen 11" />
               </div>
             </div>
           </div>
@@ -69,7 +77,7 @@
         <!-- Proyecto 2 -->
         <div class="project" data-project="2">
           <img
-            src="https://via.placeholder.com/400x300"
+            src="assests/Img2.png"
             alt="Web Desing"
             class="project-thumbnail"
           />
@@ -77,8 +85,15 @@
             <div class="lightbox-content">
               <span class="lightbox-close" data-close="2">&times;</span>
               <div class="lightbox-gallery">
-                <img src="images/project2-img1.jpg" alt="Imagen 1" />
-                <img src="images/project2-img2.jpg" alt="Imagen 2" />
+                <a
+                  href="https://invitacion-karina-y-gerardo.netlify.app/"
+                  target="_blank"
+                >
+                  <img src="assests/Web1.png" alt="Web 1" />
+                </a>
+                <a href="https://invitaciondyr.netlify.app/" target="_blank">
+                  <img src="assests/Web2.png" alt="Web 2" />
+                </a>
               </div>
             </div>
           </div>
@@ -87,7 +102,7 @@
         <!-- Proyecto 3 -->
         <div class="project" data-project="3">
           <img
-            src="https://via.placeholder.com/400x300"
+            src="assests/Img3.png"
             alt="Project 3"
             class="project-thumbnail"
           />
@@ -95,7 +110,12 @@
             <div class="lightbox-content">
               <span class="lightbox-close" data-close="3">&times;</span>
               <div class="lightbox-gallery">
-                <img src="images/project3-img1.jpg" alt="Imagen 1" />
+                <a
+                  href="https://chromewebstore.google.com/detail/its-time/ndoomahidgiehkdhcadicaoplbieiemm?utm_source=item-share-cb&pli=1"
+                  target="_blank"
+                >
+                  <img src="assests/Proj1.png" alt="Project 1" />
+                </a>
               </div>
             </div>
           </div>
@@ -116,10 +136,24 @@
 
     <section id="contact" class="contact">
       <h2>Contact</h2>
-      <form>
-        <input type="text" placeholder="Your Name" />
-        <input type="email" placeholder="Your Email" />
-        <textarea rows="5" placeholder="Your Message"></textarea>
+      <form action="https://formsubmit.co/iliana.qb.17@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <!-- Configuraciones opcionales -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://iliqb.github.io/portfolioiqb.github.io/"
+        />
+
         <button type="submit">Send Message</button>
       </form>
     </section>
