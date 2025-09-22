@@ -34,3 +34,40 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+const track = document.querySelector(".carousel-track");
+const slides = Array.from(track.children);
+const nextButton = document.querySelector(".carousel-btn.next");
+const prevButton = document.querySelector(".carousel-btn.prev");
+const dotsNav = document.querySelector(".carousel-dots");
+
+let currentSlide = 0;
+
+// Crear puntos
+slides.forEach((_, index) => {
+  const dot = document.createElement("button");
+  if (index === 0) dot.classList.add("active");
+  dotsNav.appendChild(dot);
+});
+
+const dots = Array.from(dotsNav.children);
+
+function updateCarousel(index) {
+  track.style.transform = `translateX(-${500 * index}px)`; // 320px = ancho
+  dots.forEach((dot) => dot.classList.remove("active"));
+  dots[index].classList.add("active");
+  currentSlide = index;
+}
+
+nextButton.addEventListener("click", () => {
+  let newIndex = (currentSlide + 1) % slides.length;
+  updateCarousel(newIndex);
+});
+
+prevButton.addEventListener("click", () => {
+  let newIndex = (currentSlide - 1 + slides.length) % slides.length;
+  updateCarousel(newIndex);
+});
+
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => updateCarousel(index));
+});

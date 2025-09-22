@@ -185,3 +185,103 @@ footer {
     text-align: center;
   }
 }
+/* --- Contenedor del background (mockup) --- */
+.lightbox-content {
+  background-color: #faf4ec;
+  position: relative; /* necesario para posicionar el carrusel encima */
+  width: 100%;
+  height: 100%;
+  border-radius: 35px;
+  color: #80766b;
+}
+.lightbox-title {
+  position: relative;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  top: 30%;
+  font-weight: bold;
+  color: #524940;
+}
+.lightbox-subtitle {
+  position: relative;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  top: 35%;
+}
+.lightbox-description {
+  position: relative;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  top: 40%;
+  text-align: justify;
+}
+/* --- Carrusel que reemplaza el rectángulo rosa --- */
+.post-carousel {
+  position: absolute;
+  top: 30px; /* mueve el carrusel hacia abajo hasta que encaje */
+  left: 75%;
+  transform: translateX(-50%);
+  width: 500px; /* ancho del rectángulo rosa */
+  height: 750px; /* alto del rectángulo rosa */
+  overflow: hidden; /* recorta lo que se salga */
+  border-radius: 30px; /* ponle valores si tu mockup tiene esquinas redondeadas */
+  z-index: 2; /* encima del mockup */
+  background: #000; /* opcional: un fondo por si tarda en cargar la img */
+}
+
+/* --- Imágenes dentro del carrusel --- */
+.carousel-track {
+  display: flex; /* carrusel horizontal */
+  transition: transform 0.4s ease-in-out;
+  height: 100%;
+}
+
+.carousel-track img {
+  flex: 0 0 100%; /* cada imagen ocupa todo el ancho del carrusel */
+  height: 100%;
+  /* recorta sin deformar */
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.lightbox-gallery {
+  display: flex; /* activa flexbox */
+  justify-content: center; /* centra horizontalmente el grupo */
+  align-items: center; /* centra verticalmente */
+  gap: 20px; /* espacio entre imágenes */
+  padding: 20px; /* opcional */
+}
+
+.lightbox-gallery a {
+  flex: 0 1 50%; /* cada enlace ocupa la mitad */
+  display: flex; /* para centrar la imagen dentro */
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-gallery img {
+  width: 60%; /* llena el ancho del <a> */
+  height: 70%; /* mantiene proporción */
+  object-fit: cover; /* recorta si hace falta */
+  border: 5px solid #80766b; /* borde visible */
+  border-radius: 10px; /* esquinas redondeadas opcional */
+  box-sizing: border-box; /* incluye borde en el ancho */
+}
