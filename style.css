@@ -266,89 +266,223 @@ body {
   background: #eeeee6;
 }
 
-/* ======== GRAPHIC DESIGN CAROUSEL ======== */
+/* ======== GRAPHIC DESIGN SECTION ======== */
+#graphic.project-section {
+  padding: 100px 160px;
+  background: #e3dcdc !important;
+}
 
-/* GRAPHIC DESIGN */
-.graphic-section {
+#graphic .project-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 40px;
-  padding: 60px;
-  background-color: #f4f4f4;
+  justify-content: space-between;
+  gap: 80px;
 }
 
-.graphic-content h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+#graphic .project-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+#graphic .project-text h2 {
   color: #8b0000;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-.graphic-content p {
-  font-size: 1rem;
-  line-height: 1.6;
+#graphic .project-text h3 {
+  color: #8b0000;
+  font-size: 36px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
 }
 
-/* Contenido texto */
-.graphic-content {
-  width: 45%;
+#graphic .project-text .dot {
+  width: 35px;
+  height: 35px;
+  background: #8b0000;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-.mockup {
-  width: 50%;
+#graphic .project-text .description {
+  color: #2c2c2c;
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 25px 0;
+}
+
+#graphic .tech-title {
+  color: #8b0000;
+  font-size: 22px;
+  margin: 20px 0 10px 0;
+}
+
+#graphic .tech-icons {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+#graphic .tech-icons .icons {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#graphic .tech-icons .icons img {
+  width: 100%;
+  height: auto;
+}
+
+#graphic .project-buttons {
+  margin-top: 30px;
+}
+
+#graphic .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #8b0000;
+  border-radius: 9px;
+  padding: 8px 16px;
+  color: #e3dcdc;
+  text-decoration: underline;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#graphic .btn img {
+  width: 24px;
+  height: 24px;
+}
+
+/* ======== CAROUSEL EN PROJECT-IMAGE ======== */
+#graphic .project-image {
+  flex: 1;
+  max-width: 800px;
+}
+
+#graphic .post-carousel {
   position: relative;
+  width: 100%;
+  border-radius: 30px;
   overflow: hidden;
-  border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-  margin-left: auto;
 }
 
-/* Carrusel manual */
-.carousel-track {
+#graphic .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  height: 700px;
 }
 
-.carousel-track img {
+#graphic .carousel-track img {
   width: 100%;
   flex-shrink: 0;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 30px;
+  height: 100%;
 }
 
-/* Botones */
-.carousel-btn {
+#graphic .carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background: rgba(139, 0, 0, 0.7);
   border: none;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 5px 10px;
   cursor: pointer;
   border-radius: 50%;
   z-index: 10;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
 }
 
-.carousel-btn.prev {
+#graphic .carousel-btn:hover {
+  background: rgba(139, 0, 0, 0.9);
+}
+
+#graphic .carousel-btn.prev {
   left: 10px;
 }
 
-.carousel-btn.next {
+#graphic .carousel-btn.next {
   right: 10px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .graphic-section {
-    flex-direction: column;
-  }
-  .graphic-content,
-  .mockup {
-    width: 100%;
+#graphic .carousel-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+#graphic .carousel-dots .dot {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#graphic .carousel-dots .dot.active {
+  background: #8b0000;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 1200px) {
+  #graphic.project-section {
+    padding: 80px 60px;
   }
 }
+
+@media (max-width: 900px) {
+  #graphic .project-item {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  #graphic .project-text,
+  #graphic .project-image {
+    max-width: 100%;
+  }
+
+  #graphic .carousel-track {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  #graphic.project-section {
+    padding: 60px 20px;
+  }
+
+  #graphic .project-text h2,
+  #graphic .project-text h3 {
+    font-size: 28px;
+  }
+
+  #graphic .project-text .description {
+    font-size: 18px;
+  }
+}
+
 /* ======== PROJECTS SECTION ======== */
 
 .project-image img {
