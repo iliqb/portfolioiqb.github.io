@@ -4,181 +4,275 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio 2025</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Actor&family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <nav>
-      <div><strong>IQB</strong></div>
-      <div>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+    <header class="navbar">
+      <div class="logo">
+        <img src="assets/logo 1.png" alt="Logo" />
       </div>
-    </nav>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#graphic">Graphic Design</a>
+        <a href="#web">Web</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </header>
 
     <section class="hero">
-      <h1>PORFOLIO</h1>
+      <h1>PORTFOLIO</h1>
       <p>Graphic & Web Design</p>
     </section>
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <!-- COLUMNA IZQUIERDA: TEXTO -->
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I’m a passionate graphic designer and junior web developer based in
+            Mexico. I love blending creativity with logic to craft visual
+            identities and digital interfaces that are functional, accessible,
+            and visually engaging.
+          </p>
+          <p>
+            My focus lies in front-end design, brand identity, and user
+            experience, with a strong commitment to continuous learning and
+            visual precision.
+          </p>
+        </div>
 
-    <section id="about" class="about">
-      <img src="https://via.placeholder.com/300" alt="Portrait" />
-      <div>
-        <h2>About Me</h2>
+        <!-- COLUMNA DERECHA: SKILLS -->
+        <div class="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li><img src="assets/icons/html.svg" alt="HTML" /> HTML</li>
+            <li><img src="assets/icons/css.svg" alt="CSS" /> CSS</li>
+            <li>
+              <img src="assets/icons/js.svg" alt="JavaScript" /> JavaScript
+            </li>
+            <li>
+              <img src="assets/icons/photoshop.svg" alt="Photoshop" /> Adobe
+              Photoshop
+            </li>
+            <li>
+              <img src="assets/icons/illustrator.svg" alt="Illustrator" /> Adobe
+              Illustrator <span>(Basic)</span>
+            </li>
+            <li>
+              <img src="assets/icons/figma.svg" alt="Figma" /> Figma
+              <span>(Basic)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="buttons">
+        <a href="https://github.com/iliqb" class="btn red">GitHub</a>
+        <a href="#" class="btn red">CV</a>
+      </div>
+      <section>
+        <div class="contact-box">
+          <h3>Contact Info</h3>
+          <div class="contact-info">
+            <div>
+              <a href="https://www.linkedin.com/in/iliana-quintero/">
+                <span class="icon"
+                  ><img src="assets/icons/Linkedin.svg" alt="Linkedin"
+                /></span>
+                in/iliana-quintero
+              </a>
+            </div>
+            <div>
+              <a href="mailto:ilideveloper@outlook.com">
+                <span class="icon"
+                  ><img src="assets/icons/correo.svg" alt="correo"
+                /></span>
+                ilideveloper@outlook.com
+              </a>
+            </div>
+            <div>
+              <span class="icon"
+                ><img src="assets/icons/Ubi.svg" alt="ubicacion"
+              /></span>
+              Aguascalientes, Ags, MX
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Graphic Design - CORREGIDA -->
+      <section id="graphic" class="project-section beige">
+        <h2>Graphic Design</h2>
+        <h3>Social Media Posts — ParfoLab</h3>
         <p>
-          Hello! I’m Iliana, i’m a self-taught graphic designer and web
-          developer with a passion for visual storytelling and creative
-          problem-solving. I specialize in transforming ideas into impactful
-          designs using tools like Photoshop, and bringing them to life through
-          HTML, CSS, and JavaScript. My work blends creativity with technology
-          to craft unique, functional, and engaging digital experiences.
+          Visual content design for Parfolab's social media, a leading company
+          in fragrance experiences. The goal was to create fresh and
+          sophisticated images that reflect the brand's essence, highlighting
+          its exclusivity while maintaining its graphic identity.
         </p>
-      </div>
-    </section>
+        <p class="tech-title">Technologies Used</p>
+        <div class="tech-icons">
+          <div class="icons">
+            <img src="assets/icons/Photoshop.svg" alt="photoshop" />
+          </div>
+        </div>
+        <a
+          href="https://www.instagram.com/parfo_lab/?hl=es"
+          class="btn red underline"
+        >
+          <img src="assets/icons/link.svg" alt="" />Instagram
+        </a>
+        <div class="mockup">
+          <div class="post-carousel">
+            <div class="carousel-track">
+              <img src="assets/Imagen1.jpg" alt="Imagen 1" />
+              <img src="assets/Imagen2.jpg" alt="Imagen 2" />
+              <img src="assets/imagen3.png" alt="Imagen 3" />
+              <img src="assets/imagen4.png" alt="Imagen 4" />
+              <img src="assets/imagen5.png" alt="Imagen 5" />
+              <img src="assets/imagen6.png" alt="Imagen 6" />
+              <img src="assets/imagen7.png" alt="Imagen 7" />
+              <img src="assets/imagen8.png" alt="Imagen 8" />
+              <img src="assets/imagen9.png" alt="Imagen 9" />
+              <img src="assets/imagen10.png" alt="Imagen 10" />
+              <img src="assets/imagen11.png" alt="Imagen 11" />
+            </div>
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+            <div class="carousel-dots"></div>
+          </div>
+        </div>
+      </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects">
-        <!-- Proyecto 1 -->
-        <div class="project" data-project="1">
-          <img
-            src="assests/Img1.png"
-            alt="Graphic Design"
-            class="project-thumbnail"
-          />
+      <!-- Sección Web - CORREGIDA -->
+      <section id="web" class="project-section light">
+        <h2>Web</h2>
+        <h3>Digital Wedding Invitations</h3>
+        <p>
+          Digital wedding invitation design for modern couples. The goal was to
+          create elegant and interactive experiences that blend technology and
+          emotion, reflecting each couple's unique story while maintaining a
+          refined and cohesive visual identity.
+        </p>
+        <p class="tech-title">Technologies Used</p>
+        <div class="tech-icons">
+          <div class="icons">
+            <img src="assets/icons/html.svg" alt="HTML" />
+          </div>
+          <div class="icons"><img src="assets/icons/css.svg" alt="css" /></div>
+          <div class="icons">
+            <img src="assets/icons/JS.svg" alt="JavaScript" />
+          </div>
+          <div class="icons">
+            <img src="assets/icons/Photoshop.svg" alt="photoshop" />
+          </div>
+        </div>
+        <div class="buttons">
+          <a
+            href="https://invitacion-karina-y-gerardo.netlify.app/"
+            class="btn red underline"
+          >
+            <img src="assets/icons/link.svg" alt="" />Project 1
+          </a>
+          <a
+            href="https://invitaciondyr.netlify.app/"
+            class="btn red underline"
+          >
+            <img src="assets/icons/link.svg" alt="" />Project 2
+          </a>
+        </div>
+        <div class="mockup">
+          <div class="project-image">
+            <img src="assets/wedding.jpg" alt="Wedding" />
+          </div>
+        </div>
+      </section>
 
-          <!-- Lightbox para Proyecto 1 -->
-          <div class="lightbox-overlay" id="lightbox-1">
-            <div class="lightbox-content">
-              <span class="lightbox-close" data-close="1">&times;</span>
+      <!-- Sección Projects - CORREGIDA -->
+      <section id="projects" class="projects-section">
+        <h2>Projects</h2>
 
-              <h2 class="lightbox-title">Social Media<br />Posts</h2>
-              <h3 class="lightbox-subtitle">ParfoLab</h3>
-              <p3 class="lightbox-description"
-                >Visual content design for Parfolab’s social media,<br />
-                a leading company in fragrance experiences.<br />
-                The goal was to create fresh and sophisticated images<br />
-                that reflect the brand’s essence, highlighting its exclusivity
-                <br />while maintaining its graphic identity.</p3
-              >
-              <!-- Fondo con maqueta -->
-
-              <!-- Carrusel dentro del rectángulo rosa -->
-              <div class="post-carousel">
-                <div class="carousel-track">
-                  <img src="assests/Imagen1.jpg" alt="Imagen 1" />
-                  <img src="assests/Imagen2.jpg" alt="Imagen 2" />
-                  <img src="assests/imagen3.png" alt="Imagen 3" />
-                  <img src="assests/imagen4.png" alt="Imagen 4" />
-                  <img src="assests/imagen5.png" alt="Imagen 5" />
-                  <img src="assests/imagen6.png" alt="Imagen 6" />
-                  <img src="assests/imagen7.png" alt="Imagen 7" />
-                  <img src="assests/imagen8.png" alt="Imagen 8" />
-                  <img src="assests/imagen9.png" alt="Imagen 9" />
-                  <img src="assests/imagen10.png" alt="Imagen 10" />
-                  <img src="assests/imagen11.png" alt="Imagen 11" />
-                </div>
-                <button class="carousel-btn prev">&#10094;</button>
-                <button class="carousel-btn next">&#10095;</button>
-                <div class="carousel-dots"></div>
+        <!-- Project 1 -->
+        <div class="project-item">
+          <div class="project-text">
+            <h3><span class="dot"></span>It's Time</h3>
+            <p class="description">
+              A Chrome extension designed to track upcoming events in real time.
+              It displays the countdown seamlessly within the browser toolbar,
+              offering a clean and intuitive user experience.
+            </p>
+            <p class="tech-title">Technologies Used</p>
+            <div class="tech-icons">
+              <div class="icons">
+                <img src="assets/icons/html.svg" alt="HTML" />
+              </div>
+              <div class="icons">
+                <img src="assets/icons/css.svg" alt="css" />
+              </div>
+              <div class="icons">
+                <img src="assets/icons/JS.svg" alt="JavaScript" />
+              </div>
+              <div class="icons">
+                <img src="assets/icons/json.svg" alt="json" />
               </div>
             </div>
+            <a
+              href="https://chromewebstore.google.com/detail/its-time/ndoomahidgiehkdhcadicaoplbieiemm?utm_source=item-share-cb&pli=1"
+              class="btn red underline project-link"
+            >
+              <img src="assets/icons/link.svg" alt="" /> Project
+            </a>
+          </div>
+          <div class="project-image">
+            <img src="assets/extention.jpg" alt="It's Time Mockup" />
           </div>
         </div>
 
-        <!-- Proyecto 2 -->
-        <div class="project" data-project="2">
-          <img
-            src="assests/Img2.png"
-            alt="Web Desing"
-            class="project-thumbnail"
-          />
-          <div class="lightbox-overlay" id="lightbox-2">
-            <div class="lightbox-content">
-              <span class="lightbox-close" data-close="2">&times;</span>
-              <div class="lightbox-gallery">
-                <a
-                  href="https://invitacion-karina-y-gerardo.netlify.app/"
-                  target="_blank"
-                >
-                  <img src="assests/Web1.png" alt="Web 1" />
-                </a>
-                <a href="https://invitaciondyr.netlify.app/" target="_blank">
-                  <img src="assests/Web2.png" alt="Web 2" />
-                </a>
+        <!-- Project 2 -->
+        <div class="project-item reverse">
+          <div class="project-text">
+            <h3><span class="dot"></span>Read Mode</h3>
+            <p class="description">
+              Redesign of the logo and user interface for Read Mode, a mobile
+              application that generates customizable color filters to enhance
+              reading comfort and reduce visual strain.
+            </p>
+            <p class="tech-title">Technologies Used</p>
+            <div class="tech-icons">
+              <div class="icons">
+                <img src="assets/icons/Figma.svg" alt="figma" />
+              </div>
+              <div class="icons">
+                <img src="assets/icons/Illustrator.svg" alt="illustrator" />
               </div>
             </div>
+            <a
+              href="https://www.figma.com/design/yRrZ45gP3ARV9vaHGiYrNF/Read-mode?node-id=0-1&t=2rEmd4VH96mGOoCd-1"
+              class="btn red underline project-link"
+            >
+              <img src="assets/icons/link.svg" alt="" /> Project
+            </a>
+          </div>
+          <div class="project-image">
+            <img src="assets/READ MODE.jpg" alt="Read Mode Mockup" />
           </div>
         </div>
+      </section>
 
-        <!-- Proyecto 3 -->
-        <div class="project" data-project="3">
-          <img
-            src="assests/Img3.png"
-            alt="Project 3"
-            class="project-thumbnail"
-          />
-          <div class="lightbox-overlay" id="lightbox-3">
-            <div class="lightbox-content">
-              <span class="lightbox-close" data-close="3">&times;</span>
-              <div class="lightbox-gallery">
-                <a
-                  href="https://chromewebstore.google.com/detail/its-time/ndoomahidgiehkdhcadicaoplbieiemm?utm_source=item-share-cb&pli=1"
-                  target="_blank"
-                >
-                  <img src="assests/Proj1.png" alt="Project 1" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <footer>
+        &copy; 2025 Iliana Quintero Benitez — All Rights Reserved.
+      </footer>
+      <script src="script.js"></script>
     </section>
-
-    <section id="skills">
-      <h2>Skills & Expertise</h2>
-      <div class="skills">
-        <span>HTLM</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Typography</span>
-        <span>Photoshop</span>
-        <span>Illustrator</span>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <form action="https://formsubmit.co/iliana.qb.17@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea
-          name="message"
-          rows="5"
-          placeholder="Your Message"
-          required
-        ></textarea>
-
-        <!-- Configuraciones opcionales -->
-        <input type="hidden" name="_captcha" value="false" />
-        <input
-          type="hidden"
-          name="_next"
-          value="https://iliqb.github.io/portfolioiqb.github.io/"
-        />
-
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-
-    <footer>&copy; 2025 Iliana Quintero Benitez. All rights reserved.</footer>
-    <script src="script.js"></script>
   </body>
 </html>
