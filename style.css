@@ -132,6 +132,9 @@ body {
   font-size: 18px;
   margin-left: 6px;
 }
+.contact-box {
+  color: #8b0000;
+}
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
@@ -592,4 +595,201 @@ footer {
   color: #8b0000;
   background: #e3dcdc;
   font-size: 14px;
+}
+
+/* ======== AJUSTES RESPONSIVE GENERALES ======== */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 20px 60px;
+  }
+
+  .project-section,
+  .projects-section,
+  .about-section {
+    padding: 60px;
+  }
+
+  .hero h1 {
+    font-size: 72px;
+  }
+
+  .hero p {
+    font-size: 36px;
+  }
+}
+
+/* ======== TABLETS ======== */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  .navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .navbar nav a {
+    font-size: 18px;
+    margin: 5px 10px;
+  }
+
+  /* Hero */
+  .hero {
+    margin-top: 60px;
+    padding: 0 20px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .hero p {
+    font-size: 26px;
+  }
+
+  /* About */
+  .about-section {
+    padding: 40px 20px;
+  }
+
+  .about-text h2 {
+    font-size: 28px;
+  }
+
+  .about-text p {
+    font-size: 18px;
+  }
+
+  .skills h3 {
+    font-size: 24px;
+  }
+
+  .skills li {
+    font-size: 18px;
+  }
+
+  /* Project sections */
+  .project-section,
+  .projects-section {
+    padding: 50px 20px;
+  }
+
+  .project-item {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .project-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .project-text h3 {
+    font-size: 26px;
+    justify-content: center;
+  }
+
+  .project-text .description {
+    font-size: 18px;
+  }
+
+  .project-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Carousel */
+  #graphic .carousel-track {
+    height: 250px;
+  }
+
+  #graphic .carousel-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  /* Contact box */
+  .contact-box {
+    padding: 20px;
+    margin: 40px 15px;
+  }
+
+  .contact-box h3 {
+    font-size: 20px;
+  }
+
+  .contact-info a {
+    font-size: 16px;
+  }
+
+  /* Buttons */
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px;
+    font-size: 12px;
+  }
+}
+
+/* ======== CELULARES PEQUEÑOS ======== */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .navbar img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar nav a {
+    font-size: 16px;
+  }
+
+  .about-section,
+  .projects-section,
+  .project-section {
+    padding: 30px 15px;
+  }
+
+  .project-text h3,
+  .project-section h2 {
+    font-size: 22px;
+  }
+
+  .project-text .description {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .contact-box {
+    padding: 15px;
+  }
+
+  .contact-info a {
+    font-size: 14px;
+  }
+
+  #graphic .carousel-track {
+    height: 180px;
+  }
 }
