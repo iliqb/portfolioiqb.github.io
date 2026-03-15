@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,9 +13,8 @@
       rel="stylesheet"
     />
     <link rel="icon" href="assets/logo.ico" type="image/x-icon" />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dark_mode.css" />
   </head>
 
   <body>
@@ -28,6 +27,11 @@
         <a href="#graphic">Graphic Design</a>
         <a href="#web">Web</a>
         <a href="#projects">Projects</a>
+        <a
+          ><label class="switch">
+            <input type="checkbox" id="darkModeToggle" />
+            <span class="slider round"></span> </label
+        ></a>
       </nav>
     </header>
 
@@ -111,19 +115,18 @@
         </div>
       </section>
 
-      <!-- Sección Graphic Design - CORREGIDA -->
       <!-- Graphic Design Section -->
       <section id="graphic" class="project-section beige">
         <div class="project-item">
           <div class="project-text">
             <h2>Graphic Design</h2>
-            <h3><span class="dot"></span>Social Media Posts — ParfoLab</h3>
+            <h3><span class="dot"></span>Social Media Posts</h3>
             <p class="description">
-              Visual content design for Parfolab's social media, a leading
-              company in fragrance experiences. The goal was to create fresh and
-              sophisticated images that reflect the brand's essence,
-              highlighting its exclusivity while maintaining its graphic
-              identity.
+              Designed and developed visual assets, including flyers, videos,
+              and social media content for bars, travel agencies, and personal
+              care brands, creating brand-aligned campaigns that strengthened
+              visual identity, ensured aesthetic consistency, and increased
+              digital presence and engagement.
             </p>
             <p class="tech-title">Technologies Used</p>
             <div class="tech-icons">
@@ -187,15 +190,22 @@
                 <img src="assets/icons/Photoshop.svg" alt="photoshop" />
               </div>
             </div>
-            <div class="project-buttons">
+            <div class="project-buttons_2">
               <a
                 href="https://invitacion-karina-y-gerardo.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="btn"
               >
-                <img src="assets/icons/link.svg" alt="" />Project 1
+                <img src="assets/icons/link.svg" alt="" />Example 1
               </a>
-              <a href="https://invitaciondyr.netlify.app/" class="btn">
-                <img src="assets/icons/link.svg" alt="" />Project 2
+              <a
+                href="https://invitaciondyr.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+              >
+                <img src="assets/icons/link.svg" alt="" />Example 2
               </a>
             </div>
           </div>
@@ -204,7 +214,7 @@
           </div>
         </div>
       </section>
-      <!-- Sección Projects - CORREGIDA -->
+      <!-- Sección Projects - -->
       <section id="projects" class="projects-section">
         <h2>Projects</h2>
 
@@ -235,6 +245,8 @@
             <a
               href="https://chromewebstore.google.com/detail/its-time/ndoomahidgiehkdhcadicaoplbieiemm?utm_source=item-share-cb&pli=1"
               class="btn red underline project-link"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img src="assets/icons/link.svg" alt="" /> Project
             </a>
@@ -265,6 +277,8 @@
             <a
               href="https://www.figma.com/design/yRrZ45gP3ARV9vaHGiYrNF/Read-mode?node-id=0-1&t=2rEmd4VH96mGOoCd-1"
               class="btn red underline project-link"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img src="assets/icons/link.svg" alt="" /> Project
             </a>
@@ -274,11 +288,8 @@
           </div>
         </div>
       </section>
-
-      <footer>
-        &copy; 2025 Iliana Quintero Benitez — All Rights Reserved.
-      </footer>
-      <script src="script.js"></script>
     </section>
+    <footer>&copy; 2025 Iliana Quintero Benitez — All Rights Reserved.</footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
