@@ -16,7 +16,7 @@ body {
 /* ======== NAVBAR ======== */
 .navbar {
   width: 100%;
-  padding: 20px 160px;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,7 +109,7 @@ input:checked + .slider:before {
 /* ======== HERO ======== */
 .hero {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 160px;
   margin-bottom: 100px;
 }
 
@@ -179,6 +179,9 @@ input:checked + .slider:before {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
 .skills li {
@@ -444,7 +447,8 @@ input:checked + .slider:before {
 /* ======== CAROUSEL EN PROJECT-IMAGE ======== */
 #graphic .project-image {
   flex: 1;
-  max-width: 800px;
+  width: 100%;
+  max-width: 100%;
 }
 
 #graphic .post-carousel {
@@ -452,21 +456,21 @@ input:checked + .slider:before {
   width: 100%;
   border-radius: 30px;
   overflow: hidden;
+  aspect-ratio: 4 / 5;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 #graphic .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  height: 700px;
+  width: 100%;
 }
 
 #graphic .carousel-track img {
   width: 100%;
-  flex-shrink: 0;
+  flex: 0 0 100%;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: 30px;
-  height: 100%;
 }
 
 #graphic .carousel-btn {
@@ -539,15 +543,29 @@ input:checked + .slider:before {
 
   #graphic .project-text,
   #graphic .project-image {
+    flex: 1;
+    width: 100%;
     max-width: 100%;
   }
 
   #graphic .carousel-track {
-    height: 300px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
   }
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 180px;
+  }
+  .hero {
+    margin-top: 220px;
+  }
+  .skills ul {
+    grid-template-columns: 1fr;
+  }
+
   #graphic.project-section {
     padding: 60px 20px;
   }
@@ -783,7 +801,9 @@ footer {
 
   /* Carousel */
   #graphic .carousel-track {
-    height: 250px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
   }
 
   #graphic .carousel-btn {
@@ -867,6 +887,8 @@ footer {
   }
 
   #graphic .carousel-track {
-    height: 180px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
   }
 }
