@@ -454,6 +454,8 @@ input:checked + .slider:before {
 #graphic .post-carousel {
   position: relative;
   width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
   border-radius: 30px;
   overflow: hidden;
   aspect-ratio: 4 / 5;
@@ -467,7 +469,8 @@ input:checked + .slider:before {
 }
 
 #graphic .carousel-track img {
-  width: 100%;
+  min-width: 100%;
+  height: 100%;
   flex: 0 0 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
