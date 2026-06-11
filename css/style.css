@@ -70,6 +70,8 @@ body {
   background-color: rgba(26, 26, 26, 0.5);
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  border-radius: 34px;
+  overflow: hidden;
 }
 
 .slider:before {
@@ -79,6 +81,7 @@ body {
   width: 26px;
   left: 4px;
   bottom: 4px;
+  border-radius: 34px;
   background-color: #eeeee6;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -236,7 +239,9 @@ input:checked + .slider:before {
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   background: #8b0000;
   color: #eeeee6;
   padding: 10px 20px;
@@ -617,7 +622,14 @@ input:checked + .slider:before {
   justify-content: space-between;
   gap: 80px;
   margin-top: 50px;
+  padding-bottom: 90px;
   margin-bottom: 50px;
+  border-bottom: 2px solid #8b0000;
+}
+.project-item:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .project-item.reverse {
